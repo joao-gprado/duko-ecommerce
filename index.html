@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script type='text/javascript'>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'pt_BR'; // For example, enter 'en' or 'en-US'
     
+                embeddedservice_bootstrap.init(
+                    '00Daj00000O51os',
+                    'Chat_Support',
+                    'https://creative-impala-qaki3g-dev-ed.trailblaze.my.site.com/ESWChatSupport1743600173748',
+                    {
+                        scrt2URL: 'https://creative-impala-qaki3g-dev-ed.trailblaze.my.salesforce-scrt.com'
+                    }
+                );
+            } catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://creative-impala-qaki3g-dev-ed.trailblaze.my.site.com/ESWChatSupport1743600173748/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>F|
     <link rel="stylesheet" href="script.js">
 </body>
 </html>
